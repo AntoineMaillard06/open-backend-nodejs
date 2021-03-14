@@ -15,6 +15,10 @@
     ],
     "*.js": "eslint --cache --fix"
   },
+  "_moduleAliases": {
+    "@routes": "src/Routes",
+    "@modules": "src/Modules"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "npx mrm lint-staged"
@@ -30,7 +34,8 @@
   },
   "homepage": "https://github.com/AntoineMaillard06/open-backend-nodejs#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "module-alias": "^2.2.2"
   },
   "devDependencies": {
     "eslint": "^7.22.0",
