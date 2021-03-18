@@ -16,8 +16,10 @@
     "*.js": "eslint --cache --fix"
   },
   "_moduleAliases": {
+    "@root": "./",
     "@routes": "src/Routes",
-    "@modules": "src/Modules"
+    "@modules": "src/Modules",
+    "@config": "src/Config"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

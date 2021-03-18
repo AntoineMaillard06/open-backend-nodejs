@@ -1,5 +1,6 @@
 require('module-alias/register');
 
+const config = require('@config/index');
 const express = require('express');
 const app = express();
 
@@ -16,7 +17,7 @@ app.use('/', routes);
 
 // App listening port
 
-const port = 3000;
+const port = config.port;
 
 app.listen(port, () => {
   console.log(`App is started on port: ${port}`);
