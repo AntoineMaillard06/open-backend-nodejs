@@ -1,5 +1,23 @@
 {
+  "environment": "dev",
   "port": 3000,
 
-  "modules": {}
+  "modules": {
+    "Database": {
+      "used": true,
+      "datas": [
+        {
+          "name": "mysqlDB",
+          "type": "mysql",
+          "conn": {
+            "connectionLimit": 10,
+            "host": "localhost",
+            "user": "me",
+            "password": "secret",
+            "database": "my_db"
+          }
+        }
+      ]
+    }
+  }
 }
