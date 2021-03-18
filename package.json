@@ -37,7 +37,9 @@
   "homepage": "https://github.com/AntoineMaillard06/open-backend-nodejs#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "module-alias": "^2.2.2"
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.12.1",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "eslint": "^7.22.0",
