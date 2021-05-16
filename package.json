@@ -19,7 +19,8 @@
     "@root": "./",
     "@routes": "src/Routes",
     "@modules": "src/Modules",
-    "@config": "src/Config"
+    "@config": "src/Config",
+    "@databases": "src/Modules/Database/index"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
