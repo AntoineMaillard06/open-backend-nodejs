@@ -65,10 +65,25 @@ these configurations have to contain a `name`, a `type` and a `conn`.
  - `name` is a string that defined the variable name you will use to access your database object. This string have to follow the [javascript variable naming rules](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScript#variable_naming).
  - `type` is a string that defined the database type you will use. Actually **'mysql'** or **'mongo'**.
  - `conn` is an object that will be used to create database connections.
-   - For **mysql** configurations please refer to [this page](https://www.npmjs.com/package/mysql#connection-options).
-   - For **mongo** configurations please be sure to set `conn.uri` with this format: `mongodb://username:password@host:port/database`. Also you have to set `conn.options` that is the option object. For more informations please refer to [this page](https://mongoosejs.com/docs/connections.html).
+   - For **mysql** configurations, please refer to [this page](https://www.npmjs.com/package/mysql#connection-options).
+   - For **mongo** configurations, please be sure to set `conn.uri` with this format: `mongodb://username:password@host:port/database`. Also you have to set `conn.options` that is the option object. For more informations please refer to [this page](https://mongoosejs.com/docs/connections.html).
 
+___
+To use your database import it like this:
 
+```javascript
+const db = require('@databases');
+```
+
+Then use the database object with the name you set in the **config.json** file.
+
+```javascript
+// config.json → "name": 'myMysqlDB'
+
+db.myMysqlDB;
+```
+
+To use these database objects please refer to the [mysql documentation](https://www.npmjs.com/package/mysql) and the [mongoose documentation](https://mongoosejs.com/docs/).
 
 ## Contribute
 
